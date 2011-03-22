@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 import org.bukkit.command.PluginCommand;
 
 import org.bukkit.command.CommandSender;
+import org.bukkit.persistence.Persistence;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.scheduler.BukkitScheduler;
 
@@ -166,4 +167,14 @@ public interface Server {
      * @throws CommandException Thrown when the executor for the given command fails with an unhandled exception
      */
     public boolean dispatchCommand(CommandSender sender, String commandLine);
+
+    /**
+     * Retrieve the Persistence engine for this server.
+     * 
+     * Use this function to get a reference to Persistence, which you can use to
+     * access the Persistence API.
+     * 
+     * @return This server's Persistence engine.
+     */
+    public Persistence getPersistence();
 }
