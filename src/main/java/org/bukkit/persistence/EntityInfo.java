@@ -1,5 +1,7 @@
 package org.bukkit.persistence;
 
+import org.bukkit.persistence.annotation.PersistClass;
+
 public class EntityInfo {
     private boolean cached = true;
     private boolean contained = false;

@@ -1,4 +1,4 @@
-package org.bukkit.persistence;
+package org.bukkit.persistence.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
