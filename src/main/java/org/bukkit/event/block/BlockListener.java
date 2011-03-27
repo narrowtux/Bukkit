@@ -101,4 +101,12 @@ public class BlockListener implements Listener {
      */
     public void onBlockBreak(BlockBreakEvent event) {
     }
+    
+    /**
+     * Called when a blocks light level is being changed
+     * 
+     * @param event Relevant event details
+     */
+    public void onBlockLightLevelChange(BlockLightLevelChangeEvent event){
+    }
 }

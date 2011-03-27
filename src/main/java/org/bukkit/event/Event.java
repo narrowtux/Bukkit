@@ -324,6 +324,14 @@ public abstract class Event implements Serializable {
          * @see org.bukkit.event.block.BlockBurnEvent
          */
         BLOCK_BURN (Category.BLOCK),
+        
+        /**
+         * Called when a blocks light level changes
+         * 
+         * @see org.bukkit.event.block.BlockLightLevelChangeEvent
+         */
+        
+        BLOCK_LIGHT_LEVEL_CHANGE (Category.BLOCK),
 
         /**
          * Called when leaves are decaying naturally
