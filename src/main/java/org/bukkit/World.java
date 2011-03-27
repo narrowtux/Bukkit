@@ -428,4 +428,11 @@ public interface World {
      * Saves world to disk
      */
     public void save();
+    
+    /**
+     * Plays the specified sound at the location
+     * @param sound is the sound to be played
+     * @param loc is the location from where players should hear the sound
+     */
+    public void playSound(String sound, Location loc);
 }
